@@ -51,7 +51,10 @@
 								"input": "public"
 							}
 						],
-						"styles": ["src/index.css"],
+						"styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/index.css"
+            ],
 						"scripts": []
 					},
 					"configurations": {

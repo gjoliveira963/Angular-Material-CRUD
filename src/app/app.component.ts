@@ -1,17 +1,12 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { MatSlideToggleModule } from "@angular/material/slide-toggle";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+	selector: "App",
+	standalone: true,
+	templateUrl: "./app.component.html",
+	styleUrls: ["./app.component.css"],
+	imports: [RouterOutlet, MatSlideToggleModule],
 })
-export class AppComponent {
-  title = 'minimal';
-}
+export class AppComponent {}
